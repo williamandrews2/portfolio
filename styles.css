@@ -1,5 +1,11 @@
 body {
     margin: 0;
+    background-image: url("canyon.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
 }
 
 .header {
@@ -7,9 +13,39 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: gray;
+    height: 140px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-ul {
+.header li{
+    display: inline-block;
+    padding: 8px 8px;
+}
+
+.header ul {
+    padding:0px;
     list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin:64px;
+    padding-bottom: 32px;
+}
+
+.card {
+    margin-bottom:64px;
+    background: rgba(0, 0, 0, 0.4);
+    width:70vw;
+    border-radius: 20px;
+    padding:0px 30px 0px 30px;
+}
+
+.card h1 {
+    
 }
