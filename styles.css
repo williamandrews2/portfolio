@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -32,7 +36,12 @@ body {
 
 .header li{
     display: inline-block;
-    padding: 8px 8px;
+    padding: 8px 16px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
 }
 
 .header ul {
@@ -123,4 +132,17 @@ body {
     max-height: 60vh;
     height: auto;
     width: auto;
+}
+
+/* Contact Section */
+
+#contactlinks {
+    display:flex;
+    justify-content: center;
+}
+
+.contactlogos {
+    height: 100px;
+    width: auto;
+    padding: 0px 40px;
 }

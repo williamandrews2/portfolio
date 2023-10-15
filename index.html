@@ -10,15 +10,15 @@
     <div class="header">
         <h1>William Andrews II</h1>
         <ul id="nav">
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Experience</li>
-            <li>Contact</li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
         <div class="container">
-            <div class="card">
+            <div class="card" id="aboutme">
                 <div id="image-container">
                     <img src="./images/profilepicture.png" alt="Picture of me!">
                 </div>
@@ -84,14 +84,31 @@
                 </div>
 
                 <div class="project-section">
-                    <h3>Holy Grail Web Layout</h3>
-                    <img src="./images/myawesomewebsite.png" alt="My Awesome Website Image">
+                    <h3>Topic Board Landing Page</h3>
+                    <img src="./images/topicboard.png" alt="Topic Board Website Image">
                 </div>
+            </div>
+            <!--Reorganize later!-->
+            <div class="card" id="experience">
+                <h1>Experience</h1>
+                <h2>Discount Tire Co.</h2>
+                <h3> (August 2020 - Present)</h3>
+                <p>In a dynamic and high-paced work setting, I led a team of up to five 
+                    skilled technicians, ensuring not only their efficiency but also the overall 
+                    organization of operations. My role extended to effective customer communication, 
+                    guaranteeing that their specific requirements were met to their satisfaction. 
+                    Furthermore, I took on the responsibility of promptly resolving any challenges 
+                    encountered by the technicians during their service tasks, ultimately streamlining 
+                    job completion and enhancing overall efficiency.
+                </p>
             </div>
 
             <div class="card" id="contact">
-                <h1>Let's connect.</h1>
-                <p>insert contact information and buttons or links here.</p>
+                <h1>Let's connect!</h1>
+                <div id="contactlinks">
+                    <p><a href="https://www.linkedin.com/in/william-cs"><img class="contactlogos" src="./images/inlogo.png" alt="LinkedIn"></a></p>
+                    <p><a href=mailto:"william@williamandrews.net"><img class="contactlogos" src="./images/mailicon.png" alt="Mail"></a></p>
+                </div>
             </div>
         </div>
 </body>
