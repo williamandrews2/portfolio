@@ -146,3 +146,27 @@ body {
     width: auto;
     padding: 0px 40px;
 }
+
+/* Mobile optimization */
+@media screen and (max-width:1020px) {
+    #nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header li {
+        padding: 0px 5px;
+    }
+
+    #experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contactlogos {
+        height: 50px;
+        width: auto;
+    }
+}
