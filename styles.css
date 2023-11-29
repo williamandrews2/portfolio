@@ -16,7 +16,7 @@ body {
         top: 0;
         left: 0;
         background-color: white;
-        background: url('./images/canyon.jpg') no-repeat center center;
+        background: url('./images/canyon.webp') no-repeat center center;
         background-size: cover;
         will-change: transform;
         z-index: -1;
