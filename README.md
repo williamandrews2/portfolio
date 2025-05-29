@@ -41,7 +41,7 @@ Welcome to my personal portfolio website, designed to showcase my projects, tech
 
 Feel free to connect with me:
 
-- [LinkedIn](www.linkedin.com/in/william-cs)
+- [LinkedIn](https://www.linkedin.com/in/william-cs)
 - [GitHub](https://github.com/williamandrews2)
 
 
