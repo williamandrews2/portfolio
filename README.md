@@ -1,11 +1,52 @@
-# Portfolio Website
-## Introduction
-This is a simple website (deployed) to showcase my current skills during my software development journey. As of right now, the website is a simple
-HTML and CSS website. This is planned to be changed in the future as I plan to implement more design and functionality aspects to the page. The live website can be found [here](https://williamandrews.net).
+# 💼 William Andrews – Developer Portfolio
 
-## Layout
-The layout is simple, with each section having its respective card classes. Images have been compressed to .webp formats to decrease the page loading time
-and increase overall performance. CSS has also been optimized to increase performance. 
+Welcome to my personal portfolio website, designed to showcase my projects, technical skills, and professional background. Built with performance and simplicity in mind, this site serves as a central hub for my work in web and software development.
 
-## Known Issues
-* Need to resize logos at the bottom of the page on the last card?
+🔗 **Live Site**: [williamandrews.net](https://williamandrews.net)
+
+---
+
+## 🛠️ Tech Stack
+
+- **HTML5 & CSS3** – Semantic structure and responsive styling
+- **WebP Images** – Optimized image formats for faster loading
+- **Modular CSS** – Clean and maintainable stylesheets
+- **GitHub Pages** – Seamless deployment and hosting
+
+---
+
+## 📐 Layout & Design
+
+- **Card-Based Sections** – Organized content for easy navigation
+- **Performance Optimizations** – Compressed assets and efficient CSS
+- **Responsive Design** – Ensures usability across devices
+
+---
+
+## 🚧 Planned Enhancements
+
+- Integrate JavaScript for interactive elements
+- Refine UI/UX for improved user engagement
+- Add dynamic project filtering and animations
+
+---
+
+## 🐞 Known Issues
+
+- [ ] Adjust logo sizes in the footer for better alignment
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me:
+
+- [LinkedIn](https://www.linkedin.com/in/williamandrews2)
+- [GitHub](https://github.com/williamandrews2)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
