@@ -1,7 +1,7 @@
 # Portfolio Website
 ## Introduction
 This is a simple website (deployed) to showcase my current skills during my software development journey. As of right now, the website is a simple
-HTML and CSS website. This is planned to be changed in the future as I plan to implement more design and functionality aspects to the page. The live website can be found [here](www.williamandrews.net).
+HTML and CSS website. This is planned to be changed in the future as I plan to implement more design and functionality aspects to the page. The live website can be found [here](https://williamandrews.net).
 
 ## Layout
 The layout is simple, with each section having its respective card classes. Images have been compressed to .webp formats to decrease the page loading time
