@@ -44,9 +44,4 @@ Feel free to connect with me:
 - [LinkedIn](https://www.linkedin.com/in/williamandrews2)
 - [GitHub](https://github.com/williamandrews2)
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
