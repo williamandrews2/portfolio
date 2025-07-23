@@ -2,7 +2,7 @@ import "../styles/header.css";
 
 function Header() {
   const links = [
-    { title: "About Me", href: "#about" },
+    { title: "About Me", href: "#aboutme" },
     { title: "Skills", href: "#skills" },
     { title: "Projects", href: "#projects" },
     { title: "Experience", href: "#experience" },
