@@ -69,11 +69,27 @@ function Header() {
           {isMobile ? (
             // Hamburger icon
             <IconButton
-              sx={{ display: { xs: "flex", md: "none" } }}
+              sx={{
+                display: {
+                  xs: "flex",
+                  md: "none",
+                  transition: "all 0.3s ease",
+                  borderRadius: "50%", // circular
+                  "&:hover": {
+                    backgroundColor: "rgba(70, 69, 69, 0.43)", // subtle dark bg
+                  },
+                },
+              }}
               onClick={() => setDrawerOpen(true)}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon
+                sx={{
+                  width: "2.5rem",
+                  height: "2.5rem",
+                  color: "primary.contrast",
+                }}
+              />
             </IconButton>
           ) : (
             // Desktop navbar
