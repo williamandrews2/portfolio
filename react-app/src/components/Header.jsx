@@ -80,6 +80,7 @@ function Header() {
             <Box sx={{ display: "flex", gap: 2 }}>
               {links.map((title) => (
                 <Button
+                  key={title.href}
                   component="a"
                   href={title.href}
                   variant="text"
@@ -127,8 +128,8 @@ function Header() {
         >
           {links.map((link) => (
             <ListItem
-              button
               key={link.href}
+              button
               component="a"
               href={link.href}
               sx={{

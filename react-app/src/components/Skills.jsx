@@ -21,7 +21,7 @@ function Skills() {
       <h1>Technical Skills</h1>
       <ul id="skills-list">
         {skills.map((skill) => (
-          <li>{skill}</li>
+          <li key={crypto.randomUUID()}>{skill}</li>
         ))}
       </ul>
     </section>
