@@ -1,5 +1,5 @@
 import "./App.css";
-import AboutMe from "./components/AboutMe";
+import Hero from "./components/Hero";
 import Header from "./components/Header";
 import Skills from "./components/Skills";
 
@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <div className="main-container">
-        <AboutMe />
+        <Hero />
         <Skills />
       </div>
     </>
