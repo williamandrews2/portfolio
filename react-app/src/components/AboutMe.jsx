@@ -1,41 +1,96 @@
 import pfp from "../assets/profilepicture.png";
-import "../styles/about-me.css";
+import {
+  Box,
+  Typography,
+  Grid,
+  Button,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 
 function AboutMe() {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
-    <section className="card" id="aboutme">
-      <div id="image-container">
-        <img src={pfp} alt="profile picture" />
-      </div>
+    <Box
+      component="section"
+      sx={{
+        minHeight: "70vh",
+        display: "flex",
+        alignItems: "center",
+        padding: 4,
+        backgroundColor: "background.main",
+      }}
+    >
+      <Grid
+        container
+        spacing={4}
+        alignItems="center"
+        justifyContent="center"
+        direction={isMobile ? "column-reverse" : "row"}
+      >
+        {/* Left column (text) will take up all 12 columns on small screen and half on medium. */}
+        <Grid item xs={12} md={6}>
+          <Box sx={{ textAlign: isMobile ? "center" : "left" }}>
+            <Typography variant="h5" color="text.main" gutterBottom>
+              <Box sx={{ color: "primary.main", display: "inline" }}>
+                HELLO,
+              </Box>{" "}
+              I'm William Andrews II
+            </Typography>
 
-      <h1>Allow me to introduce myself.</h1>
+            <Typography variant="h2" fontWeight="light" gutterBottom>
+              Software Engineer
+            </Typography>
 
-      <p>
-        I’m a self-driven software developer with over three years of hands-on
-        experience building user interfaces, web applications, and interactive
-        software using technologies like ReactJS, JavaScript, Unity/C#, and
-        modern development tools such as Webpack, Vite, and Git. I graduated
-        with a B.S. in Computer Science from the University of Texas at Tyler in
-        May 2024, and since then, I've continued refining my skills through both
-        professional work and personal projects.
-      </p>
-      <p>
-        I’m especially passionate about front-end development and creating
-        intuitive, maintainable user experiences — but I’m always open to
-        expanding into new areas of software development. Whether I’m
-        collaborating on team-based projects or working independently, I’m
-        dedicated to continuous learning and delivering high-quality, thoughtful
-        solutions.
-      </p>
-      <p>
-        Outside of coding, I enjoy balancing my technical curiosity with social
-        and creative pursuits. You’ll often find me learning new technology or
-        building out a project (usually both) — and just as often, connecting
-        with friends and enjoying the vibrant community around automotive
-        culture. It’s this blend of focus and balance that drives both my
-        professional growth and personal fulfillment.
-      </p>
-    </section>
+            <Typography
+              variant="h6"
+              color="text.lighter"
+              fontWeight="light"
+              marginBottom={3}
+            >
+              Passionate about technology and cars.
+            </Typography>
+
+            <Button
+              variant="contained"
+              href="#projects"
+              sx={{
+                marginRight: 3,
+              }}
+            >
+              SEE MY WORK
+            </Button>
+            <Button variant="outlined" href="#contact">
+              CONTACT ME
+            </Button>
+          </Box>
+        </Grid>
+
+        {/* Right column (picture) */}
+        <Grid item xs={12} md={6}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: isMobile ? "center" : "flex-end",
+            }}
+          >
+            <Box
+              component="img"
+              src={pfp}
+              alt="profile_picture"
+              sx={{
+                width: "80%",
+                maxWidth: 300,
+                borderRadius: "50%",
+                boxShadow: 3,
+              }}
+            />
+          </Box>
+        </Grid>
+      </Grid>
+    </Box>
   );
 }
 

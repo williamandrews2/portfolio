@@ -59,11 +59,19 @@ function Header() {
           color: "inherit",
           transition: "transform 0.3s ease-in-out",
           transform: showHeader ? "translateY(0)" : "translateY(-100%)",
+          paddingLeft: 3,
+          paddingRight: 3,
+          maxWidth: "1280px",
+          marginLeft: "auto",
+          marginRight: "auto",
         }}
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-            William Andrews II
+          <Typography
+            variant="h5"
+            sx={{ fontWeight: "bold", color: "primary.main" }}
+          >
+            WA
           </Typography>
 
           {isMobile ? (
@@ -74,9 +82,9 @@ function Header() {
                   xs: "flex",
                   md: "none",
                   transition: "all 0.3s ease",
-                  borderRadius: "50%", // circular
+                  borderRadius: "50%",
                   "&:hover": {
-                    backgroundColor: "rgba(70, 69, 69, 0.43)", // subtle dark bg
+                    backgroundColor: "rgba(70, 69, 69, 0.43)",
                   },
                 },
               }}
@@ -136,8 +144,8 @@ function Header() {
         <List
           sx={{
             width: 200,
-            color: "white",
-            backgroundColor: "#292929ff",
+            color: "text.main",
+            backgroundColor: "background.lighter",
             height: "100vh",
             textTransform: "uppercase",
           }}
