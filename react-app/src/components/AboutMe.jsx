@@ -30,6 +30,19 @@ function AboutMe() {
   const theme = useTheme();
   // const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
+  const skills = [
+    { icon: <SiJavascript title="JavaScript" />, name: "JavaScript" },
+    { icon: <SiReact title="React JS" />, name: "React JS" },
+    { icon: <SiHtml5 title="HTML5" />, name: "HTML5" },
+    { icon: <SiCss3 title="CSS3" />, name: "CSS3" },
+    { icon: <FaJava title="Java" />, name: "Java" },
+    { icon: <SiUnity title="Unity" />, name: "Unity" },
+    { icon: <SiVite title="Vite" />, name: "Vite" },
+    { icon: <SiJest title="Jest" />, name: "Jest" },
+    { icon: <SiGit title="Git" />, name: "Git" },
+    { icon: <SiMui title="Material UI" />, name: "Material UI" },
+  ];
+
   const CustomDivider = styled(Divider)(({ theme }) => ({
     height: "4px",
     width: "100px",
@@ -153,19 +166,26 @@ function AboutMe() {
                     xs: "space-around",
                     md: "initial",
                   },
+                  // REMOVE THIS PADDING WHEN GRID IS FIXED!
                   pl: "40px",
                 }}
               >
-                <SiJavascript title="JavaScript" />
-                <SiReact title="React JS" />
-                <SiHtml5 title="HTML5" />
-                <SiCss3 title="CSS3" />
-                <FaJava title="Java" />
-                <SiUnity title="Unity" />
-                <SiVite title="Vite" />
-                <SiJest title="Jest" />
-                <SiGit title="Git" />
-                <SiMui title="Material UI" />
+                {skills.map((skill) => (
+                  <Box
+                    key={skill.name}
+                    sx={{
+                      m: {
+                        xs: "0 0.4rem",
+                        md: "0 1.3rem 0 0",
+                      },
+                      "&:hover": {
+                        color: "primary.main",
+                      },
+                    }}
+                  >
+                    {skill.icon}
+                  </Box>
+                ))}
               </Box>
             </Grid>
           </Grid>
