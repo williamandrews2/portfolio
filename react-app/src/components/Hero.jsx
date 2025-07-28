@@ -15,8 +15,9 @@ function Hero() {
   return (
     <Box
       component="section"
+      id="home"
       sx={{
-        minHeight: "70vh",
+        minHeight: "80vh",
         display: "flex",
         alignItems: "center",
         padding: 4,

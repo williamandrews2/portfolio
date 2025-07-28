@@ -17,10 +17,9 @@ import { useState, useEffect } from "react";
 
 function Header() {
   const links = [
+    { title: "Home", href: "#home" },
     { title: "About Me", href: "#aboutme" },
-    { title: "Skills", href: "#skills" },
     { title: "Projects", href: "#projects" },
-    { title: "Experience", href: "#experience" },
     { title: "Contact", href: "#contact" },
   ];
 
@@ -68,7 +67,7 @@ function Header() {
       >
         <Toolbar sx={{ justifyContent: "space-between" }}>
           <Typography
-            variant="h5"
+            variant="h4"
             sx={{ fontWeight: "bold", color: "primary.main" }}
           >
             WA
