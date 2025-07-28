@@ -30,6 +30,21 @@ function AboutMe() {
   const theme = useTheme();
   // const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
+  const about = [
+    {
+      text: "I'm a software developer with over three years of experience building web interfaces and interactive applications. I earned my B.S. in Computer Science from the University of Texas at Tyler in 2024 and have continued to grow through both work and personal projects.",
+      id: 1,
+    },
+    {
+      text: "I'm passionate about front-end development and crafting clean, intuitive user experiences, while always staying open to learning new technologies and approaches.",
+      id: 2,
+    },
+    {
+      text: "Outside of coding, I enjoy car culture, creative projects, and staying connected with friends — a balance that fuels both my work and personal growth.",
+      id: 3,
+    },
+  ];
+
   const skills = [
     { icon: <SiJavascript title="JavaScript" />, name: "JavaScript" },
     { icon: <SiReact title="React JS" />, name: "React JS" },
@@ -64,7 +79,7 @@ function AboutMe() {
         <Container>
           <Grid container spacing={4}>
             {/* Left side about me */}
-            <Grid item xs={12} md={4}>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Typography variant="h3" gutterBottom component="h3">
                 About Me
               </Typography>
@@ -72,91 +87,29 @@ function AboutMe() {
             </Grid>
 
             {/* Right side about me */}
-            <Grid item xs={12} md={8}>
+            <Grid size={{ xs: 12, md: 8 }}>
               <List>
-                <ListItem>
-                  <ListItemIcon sx={{ minWidth: 40 }}>
-                    <Code sx={{ color: theme.palette.primary.main }} />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          whiteSpace: "normal",
-                          wordBreak: "break-word",
-                          overflowWrap: "break-word",
-                        }}
-                      >
-                        I'm a software developer with over three years of
-                        experience building web interfaces and interactive
-                        applications. I earned my B.S. in Computer Science from
-                        the University of Texas at Tyler in 2024 and have
-                        continued to grow through both work and personal
-                        projects.
-                      </Typography>
-                    }
-                  />
-                </ListItem>
-
-                <ListItem>
-                  <ListItemIcon sx={{ minWidth: 40 }}>
-                    <Code sx={{ color: theme.palette.primary.main }} />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          whiteSpace: "normal",
-                          wordBreak: "break-word",
-                          overflowWrap: "break-word",
-                        }}
-                      >
-                        I'm passionate about front-end development and crafting
-                        clean, intuitive user experiences, while always staying
-                        open to learning new technologies and approaches.
-                      </Typography>
-                    }
-                  />
-                </ListItem>
-
-                <ListItem>
-                  <ListItemIcon sx={{ minWidth: 40 }}>
-                    <Code sx={{ color: theme.palette.primary.main }} />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={
-                      <Typography
-                        variant="body1"
-                        sx={{
-                          whiteSpace: "normal",
-                          wordBreak: "break-word",
-                          overflowWrap: "break-word",
-                        }}
-                      >
-                        Outside of coding, I enjoy car culture, creative
-                        projects, and staying connected with friends — a balance
-                        that fuels both my work and personal growth.
-                      </Typography>
-                    }
-                  />
-                </ListItem>
+                {about.map((about) => (
+                  <ListItem key={about.id}>
+                    <ListItemIcon>
+                      <Code sx={{ color: theme.palette.primary.main }} />
+                    </ListItemIcon>
+                    <ListItemText primary={about.text} />
+                  </ListItem>
+                ))}
               </List>
             </Grid>
-          </Grid>
 
-          <Grid container>
             {/* Left side skills */}
-            <Grid item xs={12} md={4} gutterBottom>
+            <Grid size={{ xs: 12, md: 4 }}>
               <Typography variant="h3" gutterBottom component="h3">
                 Skills
               </Typography>
               <CustomDivider />
             </Grid>
 
-            {/* Right side skills */}
-            <Grid item xs={12} md={8}>
+            {/* Right side skills (icons) */}
+            <Grid size={{ xs: 12, md: 8 }}>
               <Box
                 sx={{
                   display: "flex",
@@ -166,8 +119,6 @@ function AboutMe() {
                     xs: "space-around",
                     md: "initial",
                   },
-                  // REMOVE THIS PADDING WHEN GRID IS FIXED!
-                  pl: "40px",
                 }}
               >
                 {skills.map((skill) => (
