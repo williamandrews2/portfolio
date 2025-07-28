@@ -175,3 +175,43 @@ body {
     width: auto;
   }
 }
+
+/* NEW CONSTRUCTION BANNER, DELETE WHEN NEW SITE IS LIVE */
+.construction-container {
+  max-width: 600px;
+  margin: 0px auto 60px;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px dashed #ff9800;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.construction-container h1 {
+  color: #fd5b04;
+  margin-bottom: 1rem;
+}
+
+.construction-container p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #fdfdfd;
+}
+
+.construction-container h2 {
+  color: #fa3a00;
+  margin-bottom: 1rem;
+}
+
+.construction-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.construction-container li {
+  margin: 0.5rem 0;
+  font-weight: 500;
+  color: #ffffff;
+}
