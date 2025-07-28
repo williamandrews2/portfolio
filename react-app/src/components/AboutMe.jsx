@@ -91,7 +91,7 @@ function AboutMe() {
                 {about.map((about) => (
                   <ListItem key={about.id}>
                     <ListItemIcon>
-                      <Code sx={{ color: theme.palette.primary.main }} />
+                      <Code sx={{ color: theme.palette.primary.contrast }} />
                     </ListItemIcon>
                     <ListItemText primary={about.text} />
                   </ListItem>
