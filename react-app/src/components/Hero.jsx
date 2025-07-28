@@ -32,7 +32,7 @@ function Hero() {
         direction={isMobile ? "column-reverse" : "row"}
       >
         {/* Left column (text) will take up all 12 columns on small screen and half on medium. */}
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Box sx={{ textAlign: isMobile ? "center" : "left" }}>
             <Typography variant="h5" color="text.main" gutterBottom>
               <Box sx={{ color: "primary.main", display: "inline" }}>
@@ -70,7 +70,7 @@ function Hero() {
         </Grid>
 
         {/* Right column (picture) */}
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Box
             sx={{
               display: "flex",
