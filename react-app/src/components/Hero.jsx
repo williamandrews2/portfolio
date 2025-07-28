@@ -1,4 +1,4 @@
-import pfp from "../assets/profilepicture.png";
+import pfp from "../assets/profilepicture.webp";
 import {
   Box,
   Typography,

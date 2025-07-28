@@ -28,7 +28,6 @@ import { FaJava } from "react-icons/fa";
 
 function AboutMe() {
   const theme = useTheme();
-  // const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const about = [
     {
