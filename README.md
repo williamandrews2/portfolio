@@ -9,8 +9,9 @@ Welcome to my personal portfolio website, designed to showcase my projects, tech
 ## 🛠️ Tech Stack
 
 - **HTML5 & CSS3** – Semantic structure and responsive styling
+- **ReactJS** - Component based structuring
+- **Material UI** - Streamline development of UI
 - **WebP Images** – Optimized image formats for faster loading
-- **Modular CSS** – Clean and maintainable stylesheets
 - **GitHub Pages** – Seamless deployment and hosting
 
 ---
