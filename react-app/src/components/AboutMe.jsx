@@ -4,7 +4,7 @@ import {
   Grid,
   Divider,
   useTheme,
-  useMediaQuery,
+  // useMediaQuery,
   List,
   ListItem,
   ListItemText,
@@ -22,12 +22,13 @@ import {
   SiVite,
   SiJest,
   SiGit,
+  SiMui,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 function AboutMe() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  // const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const CustomDivider = styled(Divider)(({ theme }) => ({
     height: "4px",
@@ -164,6 +165,7 @@ function AboutMe() {
                 <SiVite title="Vite" />
                 <SiJest title="Jest" />
                 <SiGit title="Git" />
+                <SiMui title="Material UI" />
               </Box>
             </Grid>
           </Grid>
