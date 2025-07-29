@@ -17,9 +17,17 @@ import pixelStrike from "../assets/pixelstrike.webp";
 import swiftask from "../assets/swiftask.webp";
 import topicLadder from "../assets/topicladder.webp";
 import weatherly from "../assets/weatherly.webp";
+import paypenguin from "../assets/paypenguin.webp";
 
 function Projects() {
   const projects = [
+    {
+      imageSrc: paypenguin,
+      title: "PayPenguin",
+      description:
+        "PayPenguin is a simple and sleek web app created for users to keep track of their monthly bills. The app is built in React JS, and utilizes localStorage to keep the user's persistent data. You can add, edit, or delete bills, and sort them by date, amount, or paid status. You can use the Reset Status button to reset the paid status of all bills at the end of the month. This is a project I am currently working on, and will soon become a full stack app that can also store your data in order to be accessed from any device.",
+    },
+
     {
       imageSrc: battleship,
       title: "Battleship",
