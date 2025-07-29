@@ -57,7 +57,7 @@ function Projects() {
 
     {
       imageSrc: topicLadder,
-      title: "TopicLadder (Capstone project)",
+      title: "TopicLadder (Capstone)",
       description:
         "The Poll Creation and Voting App delivers a smooth and immersive user experience for those looking to engage in polls without the need for user authentication. I was responsible for designing and implementing the UI using custom CSS, ensuring a clean, intuitive, and responsive interface. This app offers a strong, real-time, and user-centric platform for both creating and participating in polls, making it accessible to a broad audience.",
     },
@@ -84,15 +84,15 @@ function Projects() {
 
         <Grid container spacing={3}>
           {projects.map((project) => (
-            <Grid size={{ lg: 12, sm: 6 }} key={project.title}>
+            <Grid size={{ lg: 12, sm: 6, xs: 12 }} key={project.title}>
               <Card
                 elevation={5}
                 sx={{
                   display: "flex",
                   height: "100%",
                   backgroundColor: "background.lighter",
-
                   flexDirection: {
+                    xs: "column",
                     sm: "column",
                     lg: "row",
                   },
@@ -111,9 +111,8 @@ function Projects() {
                     image={project.imageSrc}
                     alt={project.title}
                     sx={{
-                      maxHeight: "300px",
-                      maxWidth: "400px",
-                      height: "auto",
+                      width: { lg: 400, sm: "100%" },
+                      height: { lg: 300, sm: "100%" },
                       objectFit: "contain",
                     }}
                   />
