@@ -51,7 +51,7 @@ function Hero() {
               fontWeight="light"
               marginBottom={3}
             >
-              Passionate about technology and cars.
+              Passionate about technology, finance, and cars.
             </Typography>
 
             <Button
