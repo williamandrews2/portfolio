@@ -8,9 +8,9 @@ Welcome to my personal portfolio website, designed to showcase my projects, tech
 
 ## 🛠️ Tech Stack
 
-- **HTML5 & CSS3** – Semantic structure and responsive styling
 - **ReactJS** - Component based structuring
 - **Material UI** - Streamline development of UI
+- **HTML5 & CSS3** – Semantic structure and responsive styling
 - **WebP Images** – Optimized image formats for faster loading
 - **GitHub Pages** – Seamless deployment and hosting
 
@@ -18,23 +18,17 @@ Welcome to my personal portfolio website, designed to showcase my projects, tech
 
 ## 📐 Layout & Design
 
-- **Card-Based Sections** – Organized content for easy navigation
-- **Performance Optimizations** – Compressed assets and efficient CSS
+- **Card-Based Project Section** – Organized content for easy navigation
+- **Performance Optimizations** – Compressed assets and efficient styling with Material UI
 - **Responsive Design** – Ensures usability across devices
 
 ---
 
 ## 🚧 Planned Enhancements
 
-- Integrate JavaScript for interactive elements
-- Refine UI/UX for improved user engagement
-- Add dynamic project filtering and animations
-
----
-
-## 🐞 Known Issues
-
-- [ ] Adjust logo sizes in the footer for better alignment
+- Add more to the description of each project card.
+- Add a copy of my resume to the About Me section.
+- Add links to each GitHub repository and link to a live preview of each project.
 
 ---
 
