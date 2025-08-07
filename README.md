@@ -29,6 +29,7 @@ Welcome to my personal portfolio website, designed to showcase my projects, tech
 - Add more to the description of each project card.
 - Add a copy of my resume to the About Me section.
 - Add links to each GitHub repository and link to a live preview of each project.
+- Add scroll animations to enhance UX.
 
 ---
 
