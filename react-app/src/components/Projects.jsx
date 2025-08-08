@@ -10,6 +10,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { Code } from "@mui/icons-material";
+import { motion } from "motion/react";
 
 import battleship from "../assets/battleship.webp";
 import geoDash from "../assets/geodash.webp";
@@ -72,6 +73,7 @@ function Projects() {
   ];
 
   const theme = useTheme();
+  const MotionGridItem = motion.create(Grid);
 
   return (
     <Box component="section" id="projects" sx={{ pt: "60px", pb: "60px" }}>
@@ -92,7 +94,14 @@ function Projects() {
 
         <Grid container spacing={3}>
           {projects.map((project) => (
-            <Grid size={{ lg: 12, sm: 6, xs: 12 }} key={project.title}>
+            <MotionGridItem
+              size={{ lg: 12, sm: 6, xs: 12 }}
+              key={project.title}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.7 }}
+            >
               <Card
                 elevation={5}
                 sx={{
@@ -149,7 +158,7 @@ function Projects() {
                   </Grid>
                 </CardContent>
               </Card>
-            </Grid>
+            </MotionGridItem>
           ))}
         </Grid>
       </Container>
