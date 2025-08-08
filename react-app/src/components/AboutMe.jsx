@@ -25,6 +25,7 @@ import {
   SiMui,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+import { motion } from "motion/react";
 
 function AboutMe() {
   const theme = useTheme();
@@ -64,11 +65,17 @@ function AboutMe() {
     backgroundColor: theme.palette.primary.main,
   }));
 
+  const MotionBox = motion.create(Box);
+
   return (
     <>
-      <Box
+      <MotionBox
         component="section"
         id="aboutme"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.7 }}
         sx={{
           pb: 8,
           pt: 10,
@@ -141,7 +148,7 @@ function AboutMe() {
             </Grid>
           </Grid>
         </Container>
-      </Box>
+      </MotionBox>
     </>
   );
 }

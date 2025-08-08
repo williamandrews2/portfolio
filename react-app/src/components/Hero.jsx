@@ -7,15 +7,22 @@ import {
   useTheme,
   useMediaQuery,
 } from "@mui/material";
+import { motion } from "motion/react";
 
 function Hero() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
+  const MotionBox = motion.create(Box);
+
   return (
-    <Box
+    <MotionBox
       component="section"
       id="home"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.7 }}
       sx={{
         minHeight: "80vh",
         display: "flex",
@@ -91,7 +98,7 @@ function Hero() {
           </Box>
         </Grid>
       </Grid>
-    </Box>
+    </MotionBox>
   );
 }
 
