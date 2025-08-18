@@ -10,6 +10,7 @@ Welcome to my personal portfolio website, designed to showcase my projects, tech
 
 - **ReactJS** - Component based structuring
 - **Material UI** - Streamline development of UI
+- **Framer Motion - Add smooth rendering effects to enhance UX
 - **HTML5 & CSS3** – Semantic structure and responsive styling
 - **WebP Images** – Optimized image formats for faster loading
 - **GitHub Pages** – Seamless deployment and hosting
