@@ -23,6 +23,7 @@ import {
   SiJest,
   SiGit,
   SiMui,
+  SiNodedotjs,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { motion } from "motion/react";
@@ -57,6 +58,7 @@ function AboutMe() {
     { icon: <SiJest title="Jest" />, name: "Jest" },
     { icon: <SiGit title="Git" />, name: "Git" },
     { icon: <SiMui title="Material UI" />, name: "Material UI" },
+    { icon: <SiNodedotjs title="Node JS" />, name: "Node JS" },
   ];
 
   const CustomDivider = styled(Divider)(({ theme }) => ({
