@@ -42,7 +42,7 @@ function AboutMe() {
       id: 2,
     },
     {
-      text: "Outside of coding, I enjoy car culture, creative projects, and staying connected with friends — a balance that fuels both my work and personal growth.",
+      text: "Outside of coding, I'm passionate about automotive culture and continually educating myself on various aspects of finance and financial technology. Whether it's personal investments or cryptocurrency, I find these topics fascinating and they contribute to both my personal and professional development.",
       id: 3,
     },
   ];
